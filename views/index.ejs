@@ -1,0 +1,13 @@
+<% for(let i = 0; i < 10; i++){ %> 
+  <% if(i % 2 === 0) {txt = "even" %>
+  <% } else { txt = "odd"} %>
+  <li><%= i %> - <%= txt %></li>
+<% } %>
+
+<h1><%= msg %></h1>
+<h1 style="color: red"><%= failMsg %></h1>
+<h2><%= validated %></h2>
+
+<%# This is a comment and will not show up in DOM %>
+<%# We can evaluate html code instead of printing variables literally %>
+<%- html %>

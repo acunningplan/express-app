@@ -1,8 +1,8 @@
 const express = require("express");
-const helmet = require('helmet')
+const helmet = require("helmet");
 const app = express();
 
-app.use(helmet())
+app.use(helmet());
 
 // Receive and parse json
 app.use(express.static("public"));
