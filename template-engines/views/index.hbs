@@ -1,0 +1,11 @@
+<h1>File rendered with HBS</h1>
+
+Your message is: {{ failMsg }}!
+
+{{{ html }}}
+
+{{!-- This is a comment --}}
+
+{{#each countries}}
+<li>{{ this.name }} -- {{ this.capital }}</li>
+{{/each}}
